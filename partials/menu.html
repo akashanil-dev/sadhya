@@ -1,0 +1,25 @@
+<section id="menu" class="menu-section">
+    <div class="ornament-divider">
+        <i class="fas fa-seedling"></i>
+    </div>
+    <h2 class="section-title" data-i18n="menu_title">The Grand Sadya</h2>
+    <p class="section-subtitle" data-i18n="menu_subtitle">Served fresh from our ancestral kitchen</p>
+
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search for delicacies..."
+            data-i18n-placeholder="search_placeholder" onkeyup="filterMenu()">
+        <i class="fas fa-search"></i>
+    </div>
+
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All</button>
+        <button class="filter-btn" data-filter="rice" data-i18n="filter_rice">Rice</button>
+        <button class="filter-btn" data-filter="curry" data-i18n="filter_curry">Curries</button>
+        <button class="filter-btn" data-filter="side" data-i18n="filter_side">Sides</button>
+        <button class="filter-btn" data-filter="dessert" data-i18n="filter_dessert">Desserts</button>
+    </div>
+
+    <div class="menu-grid" id="menu-container">
+        <!-- Menu items injected by JS -->
+    </div>
+</section>

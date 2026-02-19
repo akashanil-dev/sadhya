@@ -1,0 +1,13 @@
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+    background-color: var(--wood-dark);
+    color: #bcaaa4;
+    text-align: center;
+    padding: 30px 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    border-top: 2px solid rgba(255, 179, 0, 0.3);
+    letter-spacing: 0.5px;
+}

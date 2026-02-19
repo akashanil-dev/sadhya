@@ -1,0 +1,49 @@
+/* ============================================
+   VARIABLES & BASE RESET
+   ============================================ */
+
+:root {
+    --wood-dark: #3E2723;
+    --wood-light: #5D4037;
+    --brass-gold: #FFB300;
+    --brass-light: #FFD54F;
+    --cream-bg: #FFF8E1;
+    --cream-dark: #F5E6C8;
+    --tulsi-green: #33691E;
+    --text-color: #261612;
+    --text-muted: #795548;
+    --card-shadow: 0 2px 12px rgba(62, 39, 35, 0.12);
+    --card-shadow-hover: 0 12px 32px rgba(62, 39, 35, 0.2);
+    --transition: all 0.3s ease;
+    --transition-slow: all 0.5s ease;
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lora', serif;
+    background-color: var(--cream-bg);
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%235d4037' fill-opacity='0.04' fill-rule='evenodd'%3E%3Ccircle cx='5' cy='5' r='2'/%3E%3Ccircle cx='25' cy='25' r='2'/%3E%3C/g%3E%3C/svg%3E");
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}

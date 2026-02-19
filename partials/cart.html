@@ -1,0 +1,17 @@
+<!-- Cart Sidebar -->
+<div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+        <h3 data-i18n="cart_title">Your Offering</h3>
+        <button class="close-cart" onclick="toggleCart()" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+        <p class="empty-cart-msg" data-i18n="cart_empty">Your leaf is empty. Please serve.</p>
+    </div>
+    <div class="cart-footer">
+        <div class="total-row">
+            <span data-i18n="cart_total">Dakshina (Total):</span>
+            <span id="cart-total">₹0</span>
+        </div>
+        <button class="btn-primary checkout-btn" onclick="placeOrder()" data-i18n="cart_checkout">Serve Now</button>
+    </div>
+</div>
