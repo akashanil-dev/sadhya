@@ -2,10 +2,11 @@
    LANGUAGE — Toggle & UI Update
    ============================================ */
 
-let currentLang = 'en';
+let currentLang = localStorage.getItem('lang') || 'en';
 
 function toggleLanguage() {
     currentLang = currentLang === 'en' ? 'ml' : 'en';
+    localStorage.setItem('lang', currentLang);
     updateLanguageUI();
     if (typeof renderMenu === 'function') renderMenu();     // Re-render menu (index page only)
     if (typeof updateCartUI === 'function') updateCartUI();  // Re-render cart (index page only)
