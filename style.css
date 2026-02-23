@@ -189,13 +189,22 @@ nav a:hover::after {
 /* ============================================
    HERO
    ============================================ */
+/* ============================================
+   HERO
+   ============================================ */
+
 .hero {
     height: 88vh;
-    background: linear-gradient(160deg, rgba(62, 39, 35, 0.7) 0%, rgba(62, 39, 35, 0.35) 100%),
-        url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Sadhya_DS.jpg/1280px-Sadhya_DS.jpg');
+    background: linear-gradient(
+            160deg,
+            rgba(62, 39, 35, 0.7) 0%,
+            rgba(62, 39, 35, 0.35) 100%
+        ),
+        url('../images/hero.jpg');   /* <-- LOCAL IMAGE */
     background-size: cover;
-    background-position: center;
+    background-position: center 40%;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;

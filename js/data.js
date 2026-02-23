@@ -1,70 +1,3 @@
-/* ============================================
-   DATA — Translations & Menu Items
-   ============================================ */
-
-const translations = {
-    en: {
-        title: "Tharavadu",
-        nav_home: "Poomukham",
-        nav_menu: "Oottupura",
-        nav_about: "Heritage",
-        nav_contact: "Contact",
-        hero_title: "Welcome Home",
-        hero_subtitle: "Experience the divine taste of tradition in our ancestral courtyard.",
-        hero_cta: "Enter the Oottupura",
-        menu_title: "The Grand Sadya",
-        menu_subtitle: "Served fresh from our ancestral kitchen",
-        search_placeholder: "Search for delicacies...",
-        filter_all: "All",
-        filter_rice: "Rice",
-        filter_curry: "Curries",
-        filter_side: "Sides",
-        filter_dessert: "Desserts",
-        cart_title: "Your Offering",
-        cart_empty: "Your leaf is empty. Please serve.",
-        cart_total: "Dakshina (Total):",
-        cart_checkout: "Serve Now",
-        modal_title: "Blessed!",
-        modal_msg: "Your Sadya has been served with love and tradition.",
-        modal_btn: "Namaskaram",
-        footer: "&copy; 2024 The Serene Tharavadu. Preserving Tradition.",
-        add_btn: "Offer to Leaf",
-        toggle_btn: "മലയാളം",
-        view_leaf_btn: "View Leaf",
-        no_results: "No blessings found with that name."
-    },
-    ml: {
-        title: "തറവാട്",
-        nav_home: "പൂമുഖം",
-        nav_menu: "ഊട്ടുപുര",
-        nav_about: "പൈതൃകം",
-        nav_contact: "ബന്ധപ്പെടുക",
-        hero_title: "സ്വാഗതം",
-        hero_subtitle: "ഞങ്ങളുടെ തറവാട്ടിലെ പരമ്പരാഗത രുചി അനുഭവിക്കൂ.",
-        hero_cta: "ഊട്ടുപുരയിലേക്ക്",
-        menu_title: "സദ്യ വട്ടം",
-        menu_subtitle: "ഞങ്ങളുടെ തറവാട്ടിലെ അടുക്കളയിൽ നിന്ന്",
-        search_placeholder: "വിഭവങ്ങൾ തിരയുക...",
-        filter_all: "എല്ലാം",
-        filter_rice: "ചോറ്",
-        filter_curry: "കറികൾ",
-        filter_side: "വിഭവങ്ങൾ",
-        filter_dessert: "പായസം",
-        cart_title: "നിങ്ങളുടെ ഇല",
-        cart_empty: "ഇല കാലിയാണ്. വിളമ്പാം.",
-        cart_total: "ദക്ഷിണ (ആകെ):",
-        cart_checkout: "വിളമ്പുക",
-        modal_title: "അനുഗ്രഹീതം!",
-        modal_msg: "സ്നേഹത്തോടും പാരമ്പര്യത്തോടും കൂടി സദ്യ വിളമ്പി.",
-        modal_btn: "നമസ്കാരം",
-        footer: "&copy; 2024 നിർമ്മലമായ തറവാട്. പാരമ്പര്യം കാത്തുസൂക്ഷിക്കുന്നു.",
-        add_btn: "ഇലയിൽ വിളമ്പുക",
-        toggle_btn: "English",
-        view_leaf_btn: "ഇല കാണുക",
-        no_results: "ഈ പേരിലൊരു വിഭവം കണ്ടെത്തിയില്ല."
-    }
-};
-
 const menuData = [
     {
         id: 1,
@@ -74,7 +7,7 @@ const menuData = [
         category: "rice",
         description: "Nutritious red rice, the heart of the Sadya.",
         descriptionML: "സദ്യയുടെ പ്രധാന ഭാഗമായ പോഷകസമൃദ്ധമായ കുത്തരി.",
-        image: "https://placehold.co/600x450/EEE/31343C?text=Matta+Rice",
+        image: "images/mattarice.png",
         tags: ["Staple", "Nutritious"],
         tagsML: ["പ്രധാനം", "പോഷകപ്രദം"]
     },
@@ -86,7 +19,7 @@ const menuData = [
         category: "curry",
         description: "Aromatic lentil stew rich with garden vegetables.",
         descriptionML: "പച്ചക്കറികളും പരിപ്പും ചേര്ന്ന സുഗന്ധപൂരിതമായ കറി.",
-        image: "https://placehold.co/600x450/EEE/31343C?text=Sambar",
+        image: "images/sambar.png",
         tags: ["Spiced", "Flavorful"],
         tagsML: ["സുഗന്ധം", "രുചികരം"]
     },
@@ -98,7 +31,7 @@ const menuData = [
         category: "curry",
         description: "A divine blend of vegetables, coconut, and curd.",
         descriptionML: "പച്ചക്കറികളും തേങ്ങയും തൈരും ചേർന്ന ദിവ്യമായ കൂട്ട്.",
-        image: "https://placehold.co/600x450/EEE/31343C?text=Avial",
+        image: "images/avial.png",
         tags: ["Traditional", "Mild"],
         tagsML: ["പരമ്പരാഗതം", "മിതമായത്"]
     },
@@ -110,7 +43,7 @@ const menuData = [
         category: "curry",
         description: "Golden moong dal seasoned with pure ghee.",
         descriptionML: "നെയ്യ് ചേർത്ത സ്വാദിഷ്ടമായ ചെറുപയർ പരിപ്പ് കറി.",
-        image: "https://placehold.co/600x450/EEE/31343C?text=Parippu",
+        image: "images/parippucurry.png",
         tags: ["Comfort", "Classic"],
         tagsML: ["ലളിതം", "ക്ലാസിക്"]
     },
@@ -122,7 +55,7 @@ const menuData = [
         category: "side",
         description: "Stir-fried farm fresh cabbage with grated coconut.",
         descriptionML: "തേങ്ങ ചേർത്ത ഫ്രഷ് ക്യാബേജ് തോരൻ.",
-        image: "https://placehold.co/600x450/EEE/31343C?text=Thoran",
+        image: "images/thoran.png",
         tags: ["Fresh", "Side"],
         tagsML: ["ഫ്രഷ്", "തോരൻ"]
     },
@@ -134,7 +67,7 @@ const menuData = [
         category: "curry",
         description: "Thick yogurt-based curry with sun-dried yam.",
         descriptionML: "തൈരും ചേനയും ചേർത്ത കുറുകിയ കറി.",
-        image: "https://placehold.co/600x450/EEE/31343C?text=Kaalan",
+        image: "images/kaalan.png",
         tags: ["Tangy", "Preserved"],
         tagsML: ["പുളിപ്പുള്ളത്", "പരമ്പരാഗതം"]
     },
@@ -146,7 +79,7 @@ const menuData = [
         category: "side",
         description: "Crispy lentil wafers, a festive crunch.",
         descriptionML: "സദ്യക്ക് ഒഴിവാക്കാനാവാത്ത മൊരിഞ്ഞ പപ്പടം.",
-        image: "https://placehold.co/600x450/EEE/31343C?text=Pappadam",
+        image: "images/pappadam.png",
         tags: ["Crispy", "Essential"],
         tagsML: ["മൊരിഞ്ഞത്", "നിർബന്ധം"]
     },
@@ -158,7 +91,7 @@ const menuData = [
         category: "dessert",
         description: "Royal sweet delicacy with rice flakes and jaggery.",
         descriptionML: "അടയും ശർക്കരയും ചേർത്ത രാജകീയ പായസം.",
-        image: "https://placehold.co/600x450/EEE/31343C?text=Pradhaman",
+        image: "images/pradhaman.png",
         tags: ["Sweet", "Signature"],
         tagsML: ["മധുരം", "സ്പെഷ്യൽ"]
     },
@@ -170,7 +103,7 @@ const menuData = [
         category: "dessert",
         description: "Divine rice pudding slow-cooked in milk.",
         descriptionML: "പാലിൽ കുറുക്കിയെടുത്ത രുചികരമായ പായസം.",
-        image: "https://placehold.co/600x450/EEE/31343C?text=Payasam",
+        image: "images/paayasam.png",
         tags: ["Creamy", "Divine"],
         tagsML: ["പാൽരുചി", "ദിവ്യം"]
     }
