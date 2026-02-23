@@ -31,7 +31,20 @@ const translations = {
         add_btn: "Offer to Leaf",
         toggle_btn: "മലയാളം",
         view_leaf_btn: "View Leaf",
-        no_results: "No blessings found with that name."
+        no_results: "No blessings found with that name.",
+        heritage_title: "Our Heritage",
+        heritage_content: "The Serene Tharavadu stands as a testament to Kerala's rich architectural legacy. Built over a century ago, this ancestral home has witnessed generations of tradition, hospitality, and culinary excellence. Our kitchen still follows the age-old methods of slow-cooking over wood fires, preserving the authentic flavors passed down through time.",
+        heritage_content_2: "Every corner of our Tharavadu tells a story. From the hand-carved wooden pillars to the open courtyards that breathe with the monsoon rain, we have preserved the sanctity of this space to offer you more than just a meal—an experience of homecoming.",
+        contact_title: "Get in Touch",
+        contact_name: "Name",
+        contact_email: "Email",
+        contact_message: "Message",
+        contact_send: "Send Message",
+        contact_info: "Visit Us",
+        contact_address: "Address",
+        addr_line: "Amal Jyothi College of Engineering, Kanjirapally, Kerala",
+        phone_label: "Phone",
+        email_label: "Email"
     },
     ml: {
         title: "തറവാട്",
@@ -61,7 +74,20 @@ const translations = {
         add_btn: "ഇലയിൽ വിളമ്പുക",
         toggle_btn: "English",
         view_leaf_btn: "ഇല കാണുക",
-        no_results: "ഈ പേരിലൊരു വിഭവം കണ്ടെത്തിയില്ല."
+        no_results: "ഈ പേരിലൊരു വിഭവം കണ്ടെത്തിയില്ല.",
+        heritage_title: "ഞങ്ങളുടെ പൈതൃകം",
+        heritage_content: "കേരളത്തിന്റെ സമ്പന്നമായ വാസ്തുവിദ്യാ പൈതൃകത്തിന്റെ സാക്ഷ്യപത്രമാണ് ഈ തറവാട്. ഒരു നൂറ്റാണ്ടിലധികം പഴക്കമുള്ള ഈ പൈതൃക ഭവനം തലമുറകളുടെ പാരമ്പര്യം, അതിഥി സൽക്കാരം, പാചക മികവ് എന്നിവയ്ക്ക് സാക്ഷ്യം വഹിച്ചിട്ടുണ്ട്. ഞങ്ങളുടെ അടുക്കള ഇന്നും വിറകടുപ്പിലെ പഴയ പാചകരീതികൾ പിന്തുടരുന്നു, കാലങ്ങളായി കൈമാറിവന്ന യഥാർത്ഥ രുചികൾ സംരക്ഷിക്കുന്നു.",
+        heritage_content_2: "ഞങ്ങളുടെ തറവാടിന്റെ ഓരോ മൂലയും ഒരു കഥ പറയുന്നു. കൈകൊണ്ട് കൊത്തിയെടുത്ത മരത്തൂണുകൾ മുതൽ മഴക്കാലത്ത് ശ്വസിക്കുന്ന തുറന്ന മുറ്റങ്ങൾ വരെ, ഈ ഇടത്തിന്റെ പവിത്രത ഞങ്ങൾ സംരക്ഷിച്ചിരിക്കുന്നു — നിങ്ങൾക്ക് ഒരു ഭക്ഷണത്തേക്കാൾ കൂടുതൽ, ഒരു വീട്ടിലേക്കുള്ള മടക്കയാത്രയുടെ അനുഭവം നൽകാൻ.",
+        contact_title: "ബന്ധപ്പെടുക",
+        contact_name: "പേര്",
+        contact_email: "ഇമെയിൽ",
+        contact_message: "സന്ദേശം",
+        contact_send: "അയക്കുക",
+        contact_info: "സന്ദർശിക്കൂ",
+        contact_address: "വിലാസം",
+        addr_line: "അമൽ ജ്യോതി കോളേജ് ഓഫ് എഞ്ചിനീയറിംഗ്, കാഞ്ഞിരപ്പള്ളി, കേരളം",
+        phone_label: "ഫോൺ",
+        email_label: "ഇമെയിൽ"
     }
 };
 

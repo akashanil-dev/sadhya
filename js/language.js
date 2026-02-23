@@ -7,8 +7,8 @@ let currentLang = 'en';
 function toggleLanguage() {
     currentLang = currentLang === 'en' ? 'ml' : 'en';
     updateLanguageUI();
-    renderMenu();    // Re-render menu to show translated text
-    updateCartUI();  // Re-render cart to show translated text
+    if (typeof renderMenu === 'function') renderMenu();     // Re-render menu (index page only)
+    if (typeof updateCartUI === 'function') updateCartUI();  // Re-render cart (index page only)
 }
 
 function updateLanguageUI() {
@@ -37,3 +37,8 @@ function updateLanguageUI() {
         document.body.style.fontFamily = "'Lora', serif";
     }
 }
+
+// Initialize language on page load (for pages that don't load ui.js)
+document.addEventListener('DOMContentLoaded', () => {
+    updateLanguageUI();
+});
