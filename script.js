@@ -23,7 +23,7 @@ const menuData = [
         category: "rice",
         description: "Nutritious red rice, the heart of the Sadya.",
         descriptionML: "സദ്യയുടെ പ്രധാന ഭാഗമായ പോഷകസമൃദ്ധമായ കുത്തരി.",
-        image: "images/mattarice.png",
+        image: "images/mattarice.webp",
         tags: ["Staple", "Nutritious"],
         tagsML: ["പ്രധാനം", "പോഷകപ്രദം"]
     },
@@ -35,7 +35,7 @@ const menuData = [
         category: "curry",
         description: "Aromatic lentil stew rich with garden vegetables.",
         descriptionML: "പച്ചക്കറികളും പരിപ്പും ചേര്ന്ന സുഗന്ധപൂരിതമായ കറി.",
-        image: "images/sambar.png",
+        image: "images/sambar.webp",
         tags: ["Spiced", "Flavorful"],
         tagsML: ["സുഗന്ധം", "രുചികരം"]
     },
@@ -47,7 +47,7 @@ const menuData = [
         category: "curry",
         description: "A divine blend of vegetables, coconut, and curd.",
         descriptionML: "പച്ചക്കറികളും തേങ്ങയും തൈരും ചേർന്ന ദിവ്യമായ കൂട്ട്.",
-        image: "images/avial.png",
+        image: "images/avial.webp",
         tags: ["Traditional", "Mild"],
         tagsML: ["പരമ്പരാഗതം", "മിതമായത്"]
     },
@@ -59,7 +59,7 @@ const menuData = [
         category: "curry",
         description: "Golden moong dal seasoned with pure ghee.",
         descriptionML: "നെയ്യ് ചേർത്ത സ്വാദിഷ്ടമായ ചെറുപയർ പരിപ്പ് കറി.",
-        image: "images/parippucurry.png",
+        image: "images/parippucurry.webp",
         tags: ["Comfort", "Classic"],
         tagsML: ["ലളിതം", "ക്ലാസിക്"]
     },
@@ -71,7 +71,7 @@ const menuData = [
         category: "side",
         description: "Stir-fried farm fresh cabbage with grated coconut.",
         descriptionML: "തേങ്ങ ചേർത്ത ഫ്രഷ് ക്യാബേജ് തോരൻ.",
-        image: "images/thoran.png",
+        image: "images/thoran.webp",
         tags: ["Fresh", "Side"],
         tagsML: ["ഫ്രഷ്", "തോരൻ"]
     },
@@ -83,7 +83,7 @@ const menuData = [
         category: "curry",
         description: "Thick yogurt-based curry with sun-dried yam.",
         descriptionML: "തൈരും ചേനയും ചേർത്ത കുറുകിയ കറി.",
-        image: "images/kaalan.png",
+        image: "images/kaalan.webp",
         tags: ["Tangy", "Preserved"],
         tagsML: ["പുളിപ്പുള്ളത്", "പരമ്പരാഗതം"]
     },
@@ -95,7 +95,7 @@ const menuData = [
         category: "side",
         description: "Crispy lentil wafers, a festive crunch.",
         descriptionML: "സദ്യക്ക് ഒഴിവാക്കാനാവാത്ത മൊരിഞ്ഞ പപ്പടം.",
-        image: "images/pappadam.png",
+        image: "images/pappadam.webp",
         tags: ["Crispy", "Essential"],
         tagsML: ["മൊരിഞ്ഞത്", "നിർബന്ധം"]
     },
@@ -107,7 +107,7 @@ const menuData = [
         category: "dessert",
         description: "Royal sweet delicacy with rice flakes and jaggery.",
         descriptionML: "അടയും ശർക്കരയും ചേർത്ത രാജകീയ പായസം.",
-        image: "images/pradhaman.png",
+        image: "images/pradhaman.webp",
         tags: ["Sweet", "Signature"],
         tagsML: ["മധുരം", "സ്പെഷ്യൽ"]
     },
@@ -119,7 +119,7 @@ const menuData = [
         category: "dessert",
         description: "Divine rice pudding slow-cooked in milk.",
         descriptionML: "പാലിൽ കുറുക്കിയെടുത്ത രുചികരമായ പായസം.",
-        image: "images/paayasam.png",
+        image: "images/paayasam.webp",
         tags: ["Creamy", "Divine"],
         tagsML: ["പാൽരുചി", "ദിവ്യം"]
     }

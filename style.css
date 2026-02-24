@@ -195,12 +195,11 @@ nav a:hover::after {
 
 .hero {
     height: 88vh;
-    background: linear-gradient(
-            160deg,
+    background: linear-gradient(160deg,
             rgba(62, 39, 35, 0.7) 0%,
-            rgba(62, 39, 35, 0.35) 100%
-        ),
-        url('../images/hero.jpg');   /* <-- LOCAL IMAGE */
+            rgba(62, 39, 35, 0.35) 100%),
+        url('../images/hero.webp');
+    /* <-- LOCAL IMAGE */
     background-size: cover;
     background-position: center 40%;
     background-attachment: fixed;
