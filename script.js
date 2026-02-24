@@ -1,19 +1,84 @@
 const translations = {
     en: {
+        // Shared — Navbar & Footer
+        title: "Tharavadu",
+        nav_home: "Poomukham",
+        nav_menu: "Oottupura",
+        nav_about: "Heritage",
+        nav_contact: "Contact",
+        toggle_btn: "മലയാളം",
+        footer: "&copy; 2026 The Serene Tharavadu. Preserving Tradition.",
+
+        // Hero
+        hero_title: "Welcome Home",
+        hero_subtitle: "Experience the divine taste of tradition in our ancestral courtyard.",
+        hero_cta: "Enter the Oottupura",
+
+        // Menu
+        menu_title: "The Grand Sadhya",
+        menu_subtitle: "Served fresh from our ancestral kitchen",
+        search_placeholder: "Search for delicacies...",
+        filter_all: "All",
+        filter_rice: "Rice",
+        filter_curry: "Curries",
+        filter_side: "Sides",
+        filter_dessert: "Desserts",
         add_btn: "Add to Leaf",
         no_results: "No dishes found.",
+
+        // Cart
+        cart_title: "Your Offering",
         cart_empty: "Your leaf is empty. Please serve.",
+        cart_total: "Dakshina (Total):",
+        cart_checkout: "Serve Now",
         view_leaf_btn: "View Leaf",
-        toggle_btn: "മലയാളം"
+
+        // Modal
+        modal_title: "Blessed!",
+        modal_msg: "Your Sadya has been served with love and tradition.",
+        modal_btn: "Namaskaram"
     },
     ml: {
+        // Shared — Navbar & Footer
+        title: "തറവാട്",
+        nav_home: "പൂമുഖം",
+        nav_menu: "ഊട്ടുപുര",
+        nav_about: "പൈതൃകം",
+        nav_contact: "ബന്ധപ്പെടുക",
+        toggle_btn: "English",
+        footer: "&copy; 2026 ദ സെറീൻ തറവാട്. പാരമ്പര്യം സംരക്ഷിക്കുന്നു.",
+
+        // Hero
+        hero_title: "സ്വാഗതം",
+        hero_subtitle: "ഞങ്ങളുടെ തറവാട്ടിലെ പാരമ്പര്യത്തിന്റെ ദിവ്യമായ രുചി അനുഭവിക്കൂ.",
+        hero_cta: "ഊട്ടുപുരയിലേക്ക് പ്രവേശിക്കുക",
+
+        // Menu
+        menu_title: "വിശിഷ്ട സദ്യ",
+        menu_subtitle: "ഞങ്ങളുടെ പൈതൃക അടുക്കളയിൽ നിന്ന് പുതുതായി വിളമ്പിയത്",
+        search_placeholder: "വിഭവങ്ങൾ തിരയുക...",
+        filter_all: "എല്ലാം",
+        filter_rice: "ചോറ്",
+        filter_curry: "കറികൾ",
+        filter_side: "അകമ്പടികൾ",
+        filter_dessert: "പായസങ്ങൾ",
         add_btn: "ഇലയിൽ ചേർക്കുക",
         no_results: "ഭക്ഷണങ്ങൾ ലഭ്യമല്ല.",
+
+        // Cart
+        cart_title: "നിങ്ങളുടെ വഴിപാട്",
         cart_empty: "ഇല കാലിയാണ്. ദയവായി ചേർക്കുക.",
+        cart_total: "ദക്ഷിണ (ആകെ):",
+        cart_checkout: "ഇപ്പോൾ വിളമ്പുക",
         view_leaf_btn: "ഇല കാണുക",
-        toggle_btn: "English"
+
+        // Modal
+        modal_title: "അനുഗ്രഹീതം!",
+        modal_msg: "നിങ്ങളുടെ സദ്യ സ്നേഹത്തോടും പാരമ്പര്യത്തോടും കൂടി വിളമ്പിയിരിക്കുന്നു.",
+        modal_btn: "നമസ്കാരം"
     }
 };
+
 const menuData = [
     {
         id: 1,
@@ -126,7 +191,7 @@ const menuData = [
 ];
 
 let cart = [];
-let currentLang = 'en'; // Default language
+let currentLang = localStorage.getItem('lang') || 'en'; // Default language
 
 // DOM Elements
 const menuContainer = document.getElementById('menu-container');
@@ -150,6 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Toggle Language
 function toggleLanguage() {
     currentLang = currentLang === 'en' ? 'ml' : 'en';
+    localStorage.setItem('lang', currentLang);
     updateLanguageUI();
     renderMenu(); // Re-render menu to show translated text
     updateCartUI(); // Re-render cart to show translated text
