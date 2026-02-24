@@ -1,39 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Serene Tharavadu — Authentic Kerala Sadya served with love and tradition.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Serene Tharavadu — Authentic Kerala Sadya served with love and tradition."
+    />
     <title>The Serene Tharavadu</title>
 
     <!-- Google Fonts -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+Malayalam:wght@400;700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+Malayalam:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
 
     <!-- CSS Modules -->
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/hero.css">
-    <link rel="stylesheet" href="css/buttons.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/cart.css">
-    <link rel="stylesheet" href="css/overlay.css">
-    <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="css/floating.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/overlay.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/floating.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 
     <!-- Confetti Library -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- ========== HEADER / NAVBAR ========== -->
     <!-- See partials/header.html -->
     <header class="navbar">
@@ -61,70 +66,123 @@
     <!-- ========== HERO ========== -->
     <!-- See partials/hero.html -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h2 data-i18n="hero_title">Welcome Home</h2>
-            <p data-i18n="hero_subtitle">Experience the divine taste of tradition in our ancestral courtyard.</p>
-            <a href="#menu" class="btn-primary" data-i18n="hero_cta">Enter the Oottupura</a>
-        </div>
+      <div class="hero-content">
+        <h2 data-i18n="hero_title">Welcome Home</h2>
+        <p data-i18n="hero_subtitle">
+          Experience the divine taste of tradition in our ancestral courtyard.
+        </p>
+        <a href="#menu" class="btn-primary" data-i18n="hero_cta">
+          Enter the Oottupura
+        </a>
+      </div>
     </section>
 
     <!-- ========== MENU ========== -->
     <!-- See partials/menu.html -->
     <section id="menu" class="menu-section">
-        <div class="ornament-divider">
-            <i class="fas fa-seedling"></i>
-        </div>
-        <h2 class="section-title" data-i18n="menu_title">The Grand Sadya</h2>
-        <p class="section-subtitle" data-i18n="menu_subtitle">Served fresh from our ancestral kitchen</p>
+      <div class="ornament-divider">
+        <i class="fas fa-seedling"></i>
+      </div>
+      <h2 class="section-title" data-i18n="menu_title">The Grand Sadhya</h2>
+      <p class="section-subtitle" data-i18n="menu_subtitle">
+        Served fresh from our ancestral kitchen
+      </p>
 
-        <div class="search-container">
-            <input type="text" id="search-input" placeholder="Search for delicacies..."
-                data-i18n-placeholder="search_placeholder" onkeyup="filterMenu()">
-            <i class="fas fa-search"></i>
-        </div>
+      <div class="search-container">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search for delicacies..."
+          data-i18n-placeholder="search_placeholder"
+          onkeyup="filterMenu()"
+        />
+        <i class="fas fa-search"></i>
+      </div>
 
-        <div class="filters">
-            <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All</button>
-            <button class="filter-btn" data-filter="rice" data-i18n="filter_rice">Rice</button>
-            <button class="filter-btn" data-filter="curry" data-i18n="filter_curry">Curries</button>
-            <button class="filter-btn" data-filter="side" data-i18n="filter_side">Sides</button>
-            <button class="filter-btn" data-filter="dessert" data-i18n="filter_dessert">Desserts</button>
-        </div>
+      <div class="filters">
+        <button
+          class="filter-btn active"
+          data-filter="all"
+          data-i18n="filter_all"
+        >
+          All
+        </button>
+        <button class="filter-btn" data-filter="rice" data-i18n="filter_rice">
+          Rice
+        </button>
+        <button class="filter-btn" data-filter="curry" data-i18n="filter_curry">
+          Curries
+        </button>
+        <button class="filter-btn" data-filter="side" data-i18n="filter_side">
+          Sides
+        </button>
+        <button
+          class="filter-btn"
+          data-filter="dessert"
+          data-i18n="filter_dessert"
+        >
+          Desserts
+        </button>
+      </div>
 
-        <div class="menu-grid" id="menu-container">
-            <!-- Menu items injected by JS -->
-        </div>
+      <div class="menu-grid" id="menu-container">
+        <!-- Menu items injected by JS -->
+      </div>
     </section>
 
     <!-- ========== CART SIDEBAR ========== -->
     <!-- See partials/cart.html -->
     <div class="cart-sidebar" id="cart-sidebar">
-        <div class="cart-header">
-            <h3 data-i18n="cart_title">Your Offering</h3>
-            <button class="close-cart" onclick="toggleCart()" aria-label="Close cart">&times;</button>
+      <div class="cart-header">
+        <h3 data-i18n="cart_title">Your Offering</h3>
+        <button
+          class="close-cart"
+          onclick="toggleCart()"
+          aria-label="Close cart"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="cart-items" id="cart-items">
+        <p class="empty-cart-msg" data-i18n="cart_empty">
+          Your leaf is empty. Please serve.
+        </p>
+      </div>
+      <div class="cart-footer">
+        <div class="total-row">
+          <span data-i18n="cart_total">Dakshina (Total):</span>
+          <span id="cart-total">₹0</span>
         </div>
-        <div class="cart-items" id="cart-items">
-            <p class="empty-cart-msg" data-i18n="cart_empty">Your leaf is empty. Please serve.</p>
-        </div>
-        <div class="cart-footer">
-            <div class="total-row">
-                <span data-i18n="cart_total">Dakshina (Total):</span>
-                <span id="cart-total">₹0</span>
-            </div>
-            <button class="btn-primary checkout-btn" onclick="placeOrder()" data-i18n="cart_checkout">Serve Now</button>
-        </div>
+        <button
+          class="btn-primary checkout-btn"
+          onclick="placeOrder()"
+          data-i18n="cart_checkout"
+        >
+          Serve Now
+        </button>
+      </div>
     </div>
 
     <!-- ========== ORDER CONFIRMATION MODAL ========== -->
     <!-- See partials/modal.html -->
     <div id="order-modal" class="modal" role="dialog" aria-modal="true">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal()" aria-label="Close">&times;</span>
-            <i class="fas fa-hand-sparkles success-icon"></i>
-            <h3 data-i18n="modal_title">Blessed!</h3>
-            <p data-i18n="modal_msg">Your Sadya has been served with love and tradition.</p>
-            <button class="btn-primary" onclick="closeModal()" data-i18n="modal_btn">Namaskaram</button>
-        </div>
+      <div class="modal-content">
+        <span class="close-modal" onclick="closeModal()" aria-label="Close"
+          >&times;</span
+        >
+        <i class="fas fa-hand-sparkles success-icon"></i>
+        <h3 data-i18n="modal_title">Blessed!</h3>
+        <p data-i18n="modal_msg">
+          Your Sadya has been served with love and tradition.
+        </p>
+        <button
+          class="btn-primary"
+          onclick="closeModal()"
+          data-i18n="modal_btn"
+        >
+          Namaskaram
+        </button>
+      </div>
     </div>
 
     <!-- Overlay -->
@@ -132,12 +190,16 @@
 
     <!-- Floating View Leaf Button -->
     <button id="view-leaf-btn" onclick="toggleCart()" aria-label="View cart">
-        <i class="fas fa-leaf"></i>&nbsp; View Leaf
+      <i class="fas fa-leaf"></i>&nbsp; View Leaf
     </button>
 
     <!-- Scroll to Top -->
-    <button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">
-        <i class="fas fa-chevron-up"></i>
+    <button
+      id="scroll-top"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      aria-label="Scroll to top"
+    >
+      <i class="fas fa-chevron-up"></i>
     </button>
 
     <!-- ========== FOOTER ========== -->
@@ -147,13 +209,14 @@
     </footer>
 
     <!-- JS Modules (order matters: data first, then features, then ui init) -->
-    <script src="js/data.js"></script>
+    <!-- <script src="js/data.js"></script>
+    <script src="js/menu.js"></script>
     <script src="js/language.js"></script>
     <script src="js/cart.js"></script>
     <script src="js/order.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/ui.js"></script>
+    
+    <script src="js/ui.js"></script> -->
 
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
