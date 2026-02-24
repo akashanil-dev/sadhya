@@ -144,7 +144,7 @@ const langToggleBtn = document.getElementById('lang-toggle');
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     updateLanguageUI();
-    renderMenu('all');
+    if (menuContainer) renderMenu('all');
 });
 
 // Toggle Language
@@ -191,6 +191,7 @@ function renderMenu(category = 'all', searchQuery = '') {
         category = activeBtn ? activeBtn.dataset.filter : 'all';
     }
 
+    if (!menuContainer) return;
     menuContainer.innerHTML = '';
 
     let itemsToRender = menuData;
